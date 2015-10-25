@@ -1,5 +1,8 @@
+import subprocess
+
 def test_three():
     print('this is a test')
-    assert 2 + 2 == 4
+    val = subprocess.call(['gfortran', '--version'])
+    raise Exception('Trying fortran compiler')
     return
     
