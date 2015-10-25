@@ -19,6 +19,7 @@ before_install:
 before_script:
   - cd /usr/bin
   - ls -al
+  - gcc --version
   - gfortran --version
   - /usr/bin/gfortran test.f90 -o test
 
