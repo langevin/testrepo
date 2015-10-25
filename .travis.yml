@@ -26,8 +26,7 @@ before_install:
 #  - ls -l /usr/bin/gfortran-4.9
 
 before_script:
-  - cd /usr/bin
-  - ls -al
+  - ls -l /usr/bin/gfortran-4.9
   - /usr/bin/gfortran-4.9 --version
   - /usr/bin/gfortran-4.9 test.f90 -o test
 
