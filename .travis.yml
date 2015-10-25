@@ -7,9 +7,12 @@ sudo: false
 addons:
   apt:
     sources:
+      - kalakris-cmake
       - ubuntu-toolchain-r-test
     packages:
       - gfortran-4.9
+      - binutils
+      - cmake
 
 # command to install dependencies
 # install: "pip install -r requirements.txt"
