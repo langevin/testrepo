@@ -17,6 +17,8 @@ before_install:
   - export PATH=".:$PATH"
 
 before_script:
+  - cd /usr/bin
+  - ls -al
   - /usr/bin/gfortran test.f90 -o test
 
 script: nosetests
